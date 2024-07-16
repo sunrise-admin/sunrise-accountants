@@ -25,6 +25,7 @@ body {
     display: inline;
     font-size: 2.5em;
     margin: 0;
+    word-wrap: break-word;
 }
 
 .content {
@@ -76,3 +77,32 @@ body {
     text-decoration: underline;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .banner {
+        padding: 10px 0;
+    }
+
+    .banner .logo {
+        max-width: 100px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .about .director {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about .profile-pic {
+        margin: 0 auto 20px;
+    }
+
+    .about .bio {
+        max-width: 100%;
+    }
+}
