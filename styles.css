@@ -60,16 +60,24 @@ body {
     margin-bottom: 40px;
 }
 
-.services ul {
-    list-style: none;
-    padding: 0;
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.services li {
+.service-card {
     background: #e2e2e2;
-    margin: 5px 0;
-    padding: 10px;
     border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 20px); /* Adjust width with gap */
+    box-sizing: border-box;
+    min-width: 250px;
+}
+
+.service-card h3 {
+    margin-top: 0;
 }
 
 .about .director {
@@ -136,5 +144,14 @@ body {
 
     .frame h2 {
         font-size: 1.5em;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+        min-width: 100%;
     }
 }
