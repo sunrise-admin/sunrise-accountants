@@ -33,7 +33,7 @@ body {
     background: url('calculator-background.jpg') no-repeat center center;
     background-size: cover;
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0; /* Increased height */
     margin: 0; /* Remove any margin on the frame */
 }
 
@@ -69,4 +69,72 @@ body {
     background: #e2e2e2;
     margin: 5px 0;
     padding: 10px;
-    bord
+    border-radius: 5px;
+}
+
+.about .director {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about .profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about .bio {
+    max-width: 600px;
+}
+
+.contact a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .banner {
+        padding: 10px 0;
+    }
+
+    .banner .logo {
+        max-width: 100px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .about .director {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about .profile-pic {
+        margin: 0 auto 20px;
+    }
+
+    .about .bio {
+        max-width: 100%;
+    }
+
+    .frame {
+        padding: 40px 0; /* Shrink back to original height on smaller screens */
+    }
+
+    .frame-logo {
+        max-width: 100px;
+    }
+
+    .frame h2 {
+        font-size: 1.5em;
+    }
+}
